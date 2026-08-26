@@ -1,5 +1,7 @@
-# MiTutor — imagen Docker simple: sirve la app con nginx
-FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/index.html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# MiTutor — app completa (Tutor IA + llave permanente) servida con Node
+FROM node:20-alpine
+WORKDIR /app
+COPY index.html .
+COPY server.js .
+EXPOSE 3000
+CMD ["node", "server.js"]
