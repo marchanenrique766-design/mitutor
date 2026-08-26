@@ -1,0 +1,17 @@
+# ⚠️ PRIVADO: aquí guarda el servidor la llave de la API — NUNCA subir a GitHub
+data/
+
+# Capturas y archivos personales
+uploads/
+*.jpg
+*.png
+*.jpeg
+
+# Dependencias y basura
+node_modules/
+package.json
+package-lock.json
+__pycache__/
+
+# Comprimidos
+*.zip
